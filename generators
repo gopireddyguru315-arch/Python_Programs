@@ -1,0 +1,87 @@
+def numbers(n):
+    for i in range(1, n + 1):
+        yield i
+
+
+for x in numbers(5):
+    print(x)
+
+
+def even_numbers(n):
+    for i in range(1, n + 1):
+        if i % 2 == 0:
+            yield i
+
+
+for x in even_numbers(10):
+    print(x)
+
+
+def characters(s):
+    for ch in s:
+        yield ch
+
+
+for x in characters("Python"):
+    print(x)
+
+
+def reverse_characters(s):
+    for i in range(len(s) - 1, -1, -1):
+        yield s[i]
+
+
+for x in reverse_characters("Python"):
+    print(x)
+
+
+def vowels(s):
+    for ch in s:
+        if ch.lower() in "aeiou":
+            yield ch
+
+
+for x in vowels("Python Programming"):
+    print(x)
+
+
+def digits(s):
+    for ch in s:
+        if ch.isdigit():
+            yield ch
+
+
+for x in digits("abc123xyz45"):
+    print(x)
+
+
+def squares(numbers):
+    for num in numbers:
+        yield num ** 2
+
+
+for x in squares([1, 2, 3, 4, 5]):
+    print(x)
+
+
+def integer_digits(n):
+    for digit in str(n):
+        yield int(digit)
+
+
+for x in integer_digits(12345):
+    print(x)
+
+
+def cumulative_sum(numbers):
+    total = 0
+
+    for num in numbers:
+        total += num
+        yield total
+
+
+for x in cumulative_sum([1, 2, 3]):
+    print(x)
+
+
