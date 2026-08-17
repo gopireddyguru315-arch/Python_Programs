@@ -50,3 +50,4 @@ class BhimUPI(Bank):
         print(f"{amount} has been paid through UPI")
 b1 = BhimUPI(n="Nandu", a=21, g="Female", dob="01-03-2005")
 b2 =Bank(n="Vidhya", a=25, g="Female", dob="01-01-2000")
+
